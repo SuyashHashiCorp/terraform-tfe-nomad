@@ -1,13 +1,13 @@
 #AWS Region
 variable "aws_region" {
   description = "AWS region to deploy resources"
-  default     = "ap-south-1"
+  default     = " "  # Update your AWS Region
 }
 
 
 #EC2
 variable "ami_id" {
-  default = "ami-0f58b397bc5c1f2e8"
+  default = " "  # Update with your AMI ID 
 }
 
 variable "instance_type" {
@@ -60,12 +60,12 @@ variable "public_subnet_2_cidr" {
 
 variable "az_1" {
   description = "Availability-Zone-1 for Subnet_1"
-  default = "ap-south-1a"
+  default = " "  # Update with your Availability Zone_1
 }
 
 variable "az_2" {
   description = "Availability-Zone-2 for Subnet_2"
-  default = "ap-south-1b"
+  default = " "  # Update with your Availability Zone_2
 }
 
 
@@ -82,17 +82,17 @@ variable "postgres_db_version" {
 
 variable "db_name" {
   description = "Name of the PostgreSQL database"
-  default     = "tfenomaddb1"
+  default     = " "  # Update with your PostgresDB Instance Name
 }
 
 variable "db_username" {
   description = "Username for the PostgreSQL database"
-  default     = "tfenomaddbadmin"
+  default     = " "  # Update with your PostgresDB Username
 }
 
 variable "db_password" {
   description = "Password for the PostgreSQL database"
-  default     = "tfenomaddb123"
+  default     = " "  # Update with your PostgresDB Password
 }
 
 
@@ -114,13 +114,13 @@ variable "redis_engine_version" {
 variable "hosted_zone_id" {
   description = "The ID of the Route 53 Hosted Zone"
   type        = string
-  default     = "Z029268935HORWYTMTX0C" # Update with your hosted zone ID
+  default     = " "  # Update with your Hosted Zone ID
 }
 
 variable "domain_name" {
   description = "The domain name for the Route 53 record"
   type        = string
-  default     = "nomad-support.hashicorpdemo.com" # Replace with your domain name
+  default     = " "  # Update with your domain name
 }
 
 
@@ -128,10 +128,10 @@ variable "domain_name" {
 variable "tfe_license" {
   description = "TFE License"
   type        = string
-  default     = "02MV4UU43BK5HGYYTOJZWFQMTMNNEWU33JJ5KGQ22PI5KTGWSUKF2E46SRPJHUGMBULJKECNKMKRGTCWTKJV2FU3KRGBNFISTMJ5KES6C2NJRTASLJO5UVSM2WPJSEOOLULJMEUZTBK5IWST3JJEYE2R2JPFHEIUL2LJJTC3CONVLG2TCUJJUVU3KJORHDERTMJZBTANKNNVGXST2UNM2VU2SVGRHG2ULJJRBUU4DCNZHDAWKXPBZVSWCSOBRDENLGMFLVC2KPNFEXCSLJO5UWCWCOPJSFOVTGMRDWY5C2KNETMSLKJF3U22SRORGUIWLUJVKGQVKNIRGTMTL2JU3E22SBOVGVISJRJV5FC6KNPJVXQV3JJFZUS3SOGBMVQSRQLAZVE4DCK5KWST3JJF4U2RCJGBGFIQJSJRKEKNCWIRAXOT3KIF3U62SBO5LWSSLTJFWVMNDDI5WHSWKYKJYGEMRVMZSEO3DULJJUSNSJNJEXOTLKNN2E2RCZORGVI2CVJVCECNSNIRATMTKEIJQUS2LXNFSEOVTZMJLWY5KZLBJHAYRSGVTGIR3MORNFGSJWJFVES52NNJVXITKELF2E2VDIKVGUIQJWJVCECNSNIRBGCSLJO5UWGSCKOZNEQVTKMRBUSNSJNZJGYY3OJJUFU3JZPFRFGSLTJFWVU42ZK5SHUSLKOA3WMWBQHUXHSMDNIV3FCVD2MRJVE5LSONGHO43IKFZWI4KZKVVTIRSMIJ5E2NLUM4ZXAK2ZKVEWCWLFIFJE4U22OBVEU3TMGM2TI3KRFNXFIOBPMVYDIUSSJFYXUN3IMQ4GG52MNBJTMSKPNVCEUMLEIFVWGYJUMRLDAMZTHBIHO3KWNRQXMSSQGRYEU6CJJE4UINSVIZGFKYKWKBVGWV2KORRUINTQMFWDM32PMZDW4SZSPJIEWSSSNVDUQVRTMVNHO4KGMUVW6N3LF5ZSWQKUJZUFAWTHKMXUWVSZM4XUWK3MI5IHOTBXNJBHQSJXI5HWC2ZWKVQWSYKIN5SWWMCSKRXTOMSEKE6T2"
+  default     = " "  # Update with your TFE License
 }
 
 variable "tfe_image" {
   description = "TFE Release"
-  default     = "images.releases.hashicorp.com/hashicorp/terraform-enterprise:v202409-1"
+  default     = "images.releases.hashicorp.com/hashicorp/terraform-enterprise:v202409-1"  # Replace with your TFE Release Image
 }
