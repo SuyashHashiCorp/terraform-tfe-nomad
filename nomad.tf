@@ -186,7 +186,7 @@ job "tfe-job" {
 
         TFE_RUN_PIPELINE_DRIVER                       = "nomad"
         TFE_VAULT_DISABLE_MLOCK                       = "true"
-        TFE_ENCRYPTION_PASSWORD                       = ""
+        TFE_ENCRYPTION_PASSWORD                       = "${var.tfe_encryption_password}"
 
         # If you are using the default internal vault, this should be the private routable IP address of the node itself.
         TFE_VAULT_CLUSTER_ADDRESS = "https://${aws_instance.instance[1].private_ip}:8201"
