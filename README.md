@@ -29,6 +29,7 @@ You need to provide values for several variables in the variables.tf file. Open 
 - `ami_id`        - Provide the AMI ID for the EC2 instances.
 - `az_*`          - Set the Availability Zones for your Subnets (az_1, az_2).
 - `tfe_license`   - Insert your TFE license here.
+- `tfe_encryption_password` - Insert the password which you want to use for Internal Vault.
 - `db_*`          - Update database-related variables (db_name, db_username, db_password).
 - `domain_name`   - Provide the domain name you will use for TFE.
 
