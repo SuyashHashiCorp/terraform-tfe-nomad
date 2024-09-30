@@ -133,5 +133,10 @@ variable "tfe_license" {
 
 variable "tfe_image" {
   description = "TFE Release"
-  default     = "images.releases.hashicorp.com/hashicorp/terraform-enterprise:v202409-1"  # Replace with your TFE Release Image
+  default     = "images.releases.hashicorp.com/hashicorp/terraform-enterprise:v202409-1"  # Replace with the TFE Release Image
+}
+
+variable "tfe_encryption_password" {
+  description = "Encryption password for Internal Vault Mode"
+  default     = " "  # Update with the Encryption Password
 }
