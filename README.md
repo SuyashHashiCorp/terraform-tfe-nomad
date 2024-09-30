@@ -27,7 +27,7 @@ You need to provide values for several variables in the variables.tf file. Open 
 
 - `aws_region`    - Specify your preferred AWS region.
 - `ami_id`        - Provide the AMI ID for the EC2 instances.
-- `instance_type` - Set the EC2 instance type.
+- `az_*`          - Set the Availability Zones for your Subnets (az_1, az_2).
 - `tfe_license`   - Insert your TFE license here.
 - `db_*`          - Update database-related variables (db_name, db_username, db_password).
 - `domain_name`   - Provide the domain name you will use for TFE.
