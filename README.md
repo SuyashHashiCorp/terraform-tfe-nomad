@@ -34,6 +34,9 @@ You need to provide values for several variables in the variables.tf file. Open 
 
 **Note:** Additional customization might be required depending on your environment.
 
+### 3. Update the Nomad License in the `scripts/tfe_nomad_server_data.sh` file at line 73.
+As TFE is going to be installed in a custom namespace at the Nomad level, and `namespaces` are an Enterprise feature in Nomad, you will need a valid Nomad Enterprise license to proceed.
+
 ### 3. Initialize Terraform
 
 Initialize Terraform in your local environment to download the necessary providers and modules:
