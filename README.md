@@ -7,6 +7,7 @@ This repository contains Terraform configurations to deploy Terraform Enterprise
 Before using this setup, ensure you have the following prerequisites installed and configured on your local machine:
 
 - [Terraform](https://www.terraform.io/downloads.html) (v1.0.0 or later)
+- [Nomad](https://developer.hashicorp.com/nomad/install) (v1.5.0+ent or later)
 - AWS account with sufficient permissions to create and manage resources (EC2, RDS, S3, Redis, etc.
 - AWS CLI configured on your local machine (or set up environment variables for AWS credentials)
   
